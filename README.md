@@ -14,3 +14,11 @@ A small, production-focused set of .NET extensions:
 ```bash
 dotnet add package DotNet.Productivity
 
+# DotNet.Testing
+Testing utilities for .NET:
+
+TestData: deterministic random + fluent builders
+ApiTestHarness: integration testing helpers for ASP.NET Core APIs
+
+Install (test projects)
+dotnet add package DotNet.Testing
