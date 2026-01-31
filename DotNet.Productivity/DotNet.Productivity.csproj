@@ -8,7 +8,7 @@
     <Authors>Vijaya Laxmi Kumbaji</Authors>
     <Description>Developer productivity extensions for .NET: configuration validation (ConfigGuard) + guard clause helpers.</Description>
     <PackageTags>dotnet;extensions;configuration;validation;guard;startup</PackageTags>
-    <RepositoryUrl>https://github.com/<YOUR_GITHUB_REPO_URL></RepositoryUrl>
+    <RepositoryUrl>https://github.com/https://github.com/vijaya33/DeveloperProductivityHelpersSoln.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <!-- NuGet packing -->
