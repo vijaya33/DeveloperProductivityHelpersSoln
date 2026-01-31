@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+
+    <!-- NuGet metadata -->
+    <PackageId>DotNet.Testing</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Vijaya Laxmi Kumbaji</Authors>
+    <Description>Testing and quality extensions for .NET: deterministic test data builders + ASP.NET Core integration test harness utilities.</Description>
+    <PackageTags>testing;integration-tests;builders;webapi;testdata</PackageTags>
+    <RepositoryUrl>https://github.com/https://github.com/vijaya33/DeveloperProductivityHelpersSoln.git</RepositoryUrl>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Required for WebApplicationFactory integration tests -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="*" />
+    <!-- Optional helper (many teams like it). Remove if you prefer no deps -->
+    <PackageReference Include="System.Net.Http.Json" Version="*" />
+  </ItemGroup>
+</Project>
