@@ -3,15 +3,12 @@ using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
-using Microsoft.Extensions.Configuration.Binder;
-using Microsoft.Extensions.Options.DataAnnotations;
-using Microsoft.Extensions.Options.ConfigurationExtensions;
 
 
 namespace ConfigGuard
@@ -40,7 +37,8 @@ namespace ConfigGuard
 
             var builder = services
                 .AddOptions<TOptions>()
-                .Bind(section, options => options.BindNonPublicProperties = true)
+               // .Bind(section, options => options.BindNonPublicProperties = true)
+                .Bind(section)
                 .ValidateDataAnnotations();
 
             if (customValidate is not null)
@@ -94,7 +92,8 @@ namespace ConfigGuard
             return services;
         }
 
-        private sealed class ConfigPresenceHostedService : IHostedService
+       
+    private sealed class ConfigPresenceHostedService : IHostedService
         {
             private readonly IConfiguration _config;
             private readonly string[] _requiredPaths;
