@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Configuration.Binder;
+using Microsoft.Extensions.Options.DataAnnotations;
+using Microsoft.Extensions.Options.ConfigurationExtensions;
+
 
 namespace ConfigGuard
 {
@@ -68,7 +70,7 @@ namespace ConfigGuard
                 throw new InvalidOperationException($"Required configuration section '{sectionName}' was not found.");
 
             var options = new TOptions();
-            section.Bind(options); 
+            section.Bind(options);
 
             var context = new ValidationContext(options);
             var results = new List<ValidationResult>();
