@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+
+    <!-- NuGet metadata -->
+    <PackageId>DotNet.Productivity</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Vijaya Laxmi Kumbaji</Authors>
+    <Description>Developer productivity extensions for .NET: configuration validation (ConfigGuard) + guard clause helpers.</Description>
+    <PackageTags>dotnet;extensions;configuration;validation;guard;startup</PackageTags>
+    <RepositoryUrl>https://github.com/<YOUR_GITHUB_REPO_URL></RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- NuGet packing -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Optional but recommended -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Pack the package README into the nupkg root -->
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="*" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="*" />
+  </ItemGroup>
+</Project>

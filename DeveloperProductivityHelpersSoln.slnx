@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DeveloperProductivityHelpers/DeveloperProductivityHelpers.csproj" />
+  <Project Path="DotNet.Productivity/DotNet.Productivity.csproj" />
+</Solution>
