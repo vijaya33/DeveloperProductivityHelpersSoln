@@ -1,10 +1,3 @@
-# IMPORTANT:
-
-ALL OR MOST OF THE NUGET PACKAGES ARE MISSING, SO THIS MIGHT CAUSE COMPILATION FAILURES, HENCE THESE TWO PACKAGES WILL PUBLISHED TO NUGET PACKAGE MANAGER WHEN THE MISSINGS PACKAGES ARE RESTORED. 
-
-# - **TARGET FRAMEWORK: .NET CORE 10.
-# - **SDK : .NET 10.0.0 SDK. 
-
 # DeveloperProductivityHelpersSoln 
 
 This solution contains two different NuGet packages, where one of the package called DotNet.Productivity helps and improves application development by providing validation checks on Strings, dates format etc.
@@ -30,3 +23,11 @@ To download and install this Developer productivity package:
  # Developer friendly note:
 - ** API keys were gerenrated on this website (generates free API Keys):
 - ** https://www.strongdm.com/tools/api-key-generator  
+
+# Important:
+
+ALL OR MOST OF THE NUGET PACKAGES ARE MISSING, SO THIS MIGHT CAUSE COMPILATION FAILURES, HENCE THESE TWO PACKAGES WILL PUBLISHED TO NUGET PACKAGE MANAGER WHEN THE MISSINGS PACKAGES ARE RESTORED. 
+# .NET development stack: 
+- **Visual Studio 2026 Enterprise edition
+- **TARGET FRAMEWORK: .NET CORE 10.
+- **SDK : .NET 10.0.0 SDK. 
