@@ -20,14 +20,14 @@ A small, production-focused set of .NET extensions:
 To download and install this Developer productivity package: 
  - ** Package Manager Console - dotnet add package VijayaKumbaji.DotNet.Productivity 
 
- # Developer friendly note:
+ # Developer reference note to generate test API security keys:
 - ** API keys were generated on this website (generates free API Keys):
 - ** https://www.strongdm.com/tools/api-key-generator  
 
 # Important:
-
-ALL OR MOST OF THE NUGET PACKAGES ARE MISSING, SO THIS MIGHT CAUSE COMPILATION FAILURES, HENCE THESE TWO PACKAGES WILL PUBLISHED TO NUGET PACKAGE MANAGER WHEN THE MISSINGS PACKAGES ARE RESTORED. 
+***** Microsoft.Extensions.Configuration.Binder namespace nuget package did not have a definitio for .Bind and hence throws an error on DotNet.Productivity project and fails the build on this project. DotNet.Testing project builds successfully now. Needs more work on DotNet.Productivity project... *****  
+ 
 # .NET development stack: 
 - **Visual Studio 2026 Enterprise edition
-- **Target Framework:.NET CORE 9.0
-- **SDK : .NET 9.0.3 SDK. 
+- **Target Framework:.NET CORE 9.0 (changed from Target Framework 10.0.0 to 9.0 to use compatibile namespaces) 
+- **SDK : .NET 9.0.3 SDK. (changed from SDK 10.0.0 to 9.0.3 to use compatibile namespaces)
