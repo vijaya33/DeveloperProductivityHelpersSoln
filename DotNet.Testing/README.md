@@ -7,4 +7,4 @@ Testing utilities for .NET:
 ## Install (test projects)
 
 ```bash
-dotnet add package DotNet.Testing
+dotnet add package DotNet.Testing.Extensions.Common
