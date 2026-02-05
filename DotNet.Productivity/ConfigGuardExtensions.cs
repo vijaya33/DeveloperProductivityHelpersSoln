@@ -6,7 +6,10 @@ using System.Threading;
 using System.Threading.Tasks;
 
 // Add this using directive to enable the Bind extension method
-using Microsoft.Extensions.Configuration.Binder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Hosting;
 
 namespace ConfigGuard
 {
@@ -34,9 +37,9 @@ namespace ConfigGuard
 
             var builder = services
                 .AddOptions<TOptions>()
-               // .Bind(section, options => options.BindNonPublicProperties = true)
-                .Bind(section)
-                .ValidateDataAnnotations();
+                .Bind(section, options => options.BindNonPublicProperties = true);
+                // .Bind(section)
+               // .ValidateDataAnnotations();
 
             if (customValidate is not null)
             {
@@ -64,8 +67,9 @@ namespace ConfigGuard
             if (!section.Exists())
                 throw new InvalidOperationException($"Required configuration section '{sectionName}' was not found.");
 
-            var options = new TOptions();
-            section.Bind(options);
+            var options = new TOptions()
+            // section.Bind(options);
+            .Bind(options => options.BindNonPublicProperties = true);
 
             var context = new ValidationContext(options);
             var results = new List<ValidationResult>();
