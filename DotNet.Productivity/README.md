@@ -7,4 +7,4 @@ A small, production-focused set of .NET extensions:
 ## Install
 
 ```bash
-dotnet add package DotNet.Productivity
+dotnet add package DotNet.Developer.Extensions.Common
