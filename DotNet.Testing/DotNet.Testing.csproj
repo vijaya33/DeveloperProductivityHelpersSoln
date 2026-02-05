@@ -3,7 +3,7 @@
     <TargetFramework>net9.0</TargetFramework>
 
     <!-- NuGet identity -->
-    <PackageId>VijayaKumbaji.Extensions.Testing</PackageId>
+    <PackageId>DotNet.Testing.Extensions.Common</PackageId>
     <Version>1.0.0</Version>
 
     <!-- Authoring metadata -->
