@@ -16,7 +16,7 @@ and the second NuGet package provides Testing on APIs, and other methods, it pro
 - **ApiTestHarness" ": integration testing helpers for ASP.NET Core APIs 
 
 To download and install this Testing package:
- - **Package Manager Console - dotnet add package DotNet.Testing
+ - **Package Manager Console - dotnet add package VijayaKumbaji.DotNet.Testing
 
 # DotNet.Productivity
 
@@ -25,4 +25,4 @@ A small, production-focused set of .NET extensions:
 - **GuardExtensions**: lightweight fluent guard clauses for safer APIs
 
 To download and install this Developer productivity package: 
- - ** Package Manager Console - dotnet add package DotNet.Productivity 
+ - ** Package Manager Console - dotnet add package VijayaKumbaji.DotNet.Productivity 
