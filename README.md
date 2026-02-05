@@ -1,3 +1,7 @@
+# IMPORTANT:
+
+ALL OR MOST OF THE NUGET PACKAGES ARE MISSING, SO THIS MIGHT CAUSE COMPILATION FAILURES, SO PLEASE INSTALL NUGET PACKAGES PRIOR TO COMPILING. 
+
 # DeveloperProductivityHelpersSoln 
 
 This solution contains two different NuGet packages, where one of the package called DotNet.Productivity helps and improves application development by providing validation checks on Strings, dates format etc.
