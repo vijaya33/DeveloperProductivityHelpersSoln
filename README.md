@@ -25,7 +25,7 @@ To download and install this Developer productivity package:
 - ** https://www.strongdm.com/tools/api-key-generator  
 
 # Important:
-***** Microsoft.Extensions.Configuration.Binder namespace nuget package did not have a definitio for .Bind and hence throws an error on DotNet.Productivity project and fails the build on this project. DotNet.Testing project builds successfully now. Needs more work on DotNet.Productivity project... *****  
+***** Microsoft.Extensions.Configuration.Binder namespace nuget package did not have a definition for .Bind and hence throws an error on DotNet.Productivity project and fails the build on this project. DotNet.Testing project builds successfully now. Needs more work on DotNet.Productivity project... *****  
  
 # .NET development stack: 
 - **Visual Studio 2026 Enterprise edition
