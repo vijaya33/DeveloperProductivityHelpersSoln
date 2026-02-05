@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
 
     <!-- NuGet identity -->
     <PackageId>VijayaKumbaji.Extensions.Testing</PackageId>
@@ -37,10 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Needed for WebApplicationFactory integration testing helpers -->
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="*" />
-
-    <!-- Optional; safe to remove if you don't want it -->
-    <PackageReference Include="System.Net.Http.Json" Version="*" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.10" />
   </ItemGroup>
 </Project>

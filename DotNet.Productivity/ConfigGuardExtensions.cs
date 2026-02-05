@@ -5,11 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
-
+// Add this using directive to enable the Bind extension method
+using Microsoft.Extensions.Configuration.Binder;
 
 namespace ConfigGuard
 {
