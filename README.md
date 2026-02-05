@@ -1,3 +1,4 @@
+
 # DeveloperProductivityHelpersSoln 
 
 This solution contains two different NuGet packages, where one of the package called DotNet.Productivity helps and improves application development by providing validation checks on Strings, dates format etc.
@@ -31,3 +32,33 @@ To download and install this Developer productivity package:
 - **Visual Studio 2026 Enterprise edition
 - **Target Framework:.NET CORE 9.0 (changed from Target Framework 10.0.0 to 9.0 to use compatibile namespaces) 
 - **SDK : .NET 9.0.3 SDK. (changed from SDK 10.0.0 to 9.0.3 to use compatibile namespaces)
+
+# Project Structure:
+
+-|__ Project structure and files
+
+  - |__  DeveloperProductivityHelpersSoln/
+
+       - |__ .github/
+       
+           - ├── workflows/
+          
+              - ├── publish.yaml
+          
+       - |__  src/
+          - ├── DeveloperProductivityHelpersSoln.sln
+          - ├── README.md
+          - |── LICENSE
+          - |__ DotNet.Productivity
+
+                     - |__ Folders
+                    
+                     - |__ {Code Files}
+          
+          - |__ DotNet.Testing
+          
+                     - |__ Folders
+              
+                     - |__ {Code Files} 
+
+
