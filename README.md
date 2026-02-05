@@ -29,5 +29,5 @@ To download and install this Developer productivity package:
 ALL OR MOST OF THE NUGET PACKAGES ARE MISSING, SO THIS MIGHT CAUSE COMPILATION FAILURES, HENCE THESE TWO PACKAGES WILL PUBLISHED TO NUGET PACKAGE MANAGER WHEN THE MISSINGS PACKAGES ARE RESTORED. 
 # .NET development stack: 
 - **Visual Studio 2026 Enterprise edition
-- **Target Framework:.NET CORE 10.0
-- **SDK : .NET 10.0.0 SDK. 
+- **Target Framework:.NET CORE 9.0
+- **SDK : .NET 9.0.3 SDK. 
