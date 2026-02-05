@@ -2,20 +2,30 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
 
-    <!-- NuGet metadata -->
-    <PackageId>DotNet.Productivity</PackageId>
+    <!-- NuGet identity -->
+    <PackageId>VijayaKumbaji.Extensions.Productivity</PackageId>
     <Version>1.0.0</Version>
+
+    <!-- Authoring metadata -->
     <Authors>Vijaya Laxmi Kumbaji</Authors>
-    <Description>Developer productivity extensions for .NET: configuration validation (ConfigGuard) + guard clause helpers.</Description>
+    <Company>VijayaKumbaji</Company>
+    <Description>
+      Developer productivity extensions for .NET: configuration validation (ConfigGuard) and guard clause helpers.
+    </Description>
     <PackageTags>dotnet;extensions;configuration;validation;guard;startup</PackageTags>
+
+    <!-- Links (update to your real repo URL) -->
     <RepositoryUrl>https://github.com/https://github.com/vijaya33/DeveloperProductivityHelpersSoln.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- License -->
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <!-- NuGet packing -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
 
-    <!-- Optional but recommended -->
+    <!-- Symbols (recommended) -->
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
@@ -26,13 +36,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.2" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="*" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="*" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="*" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="*" />
-    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="10.0.2" />
   </ItemGroup>
 </Project>

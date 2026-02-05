@@ -2,31 +2,45 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
 
-    <!-- NuGet metadata -->
-    <PackageId>DotNet.Testing</PackageId>
+    <!-- NuGet identity -->
+    <PackageId>VijayaKumbaji.Extensions.Testing</PackageId>
     <Version>1.0.0</Version>
-    <Authors>Vijaya Laxmi Kumbaji</Authors>
-    <Description>Testing and quality extensions for .NET: deterministic test data builders + ASP.NET Core integration test harness utilities.</Description>
-    <PackageTags>testing;integration-tests;builders;webapi;testdata</PackageTags>
-    <RepositoryUrl>https://github.com/https://github.com/vijaya33/DeveloperProductivityHelpersSoln.git</RepositoryUrl>
 
+    <!-- Authoring metadata -->
+    <Authors>Vijaya Laxmi Kumbaji</Authors>
+    <Company>VijayaKumbaji</Company>
+    <Description>
+      Testing and quality extensions for .NET: deterministic test data builders and ASP.NET Core integration test harness utilities.
+    </Description>
+    <PackageTags>testing;integration-tests;builders;webapi;testdata</PackageTags>
+
+    <!-- Links (update to your real repo URL) -->
+    <!-- Links (update to your real repo URL) -->
+    <RepositoryUrl>https://github.com/https://github.com/vijaya33/DeveloperProductivityHelpersSoln.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- License -->
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
+    <!-- NuGet packing -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
 
+    <!-- Symbols (recommended) -->
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Pack the package README into the nupkg root -->
     <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Required for WebApplicationFactory integration tests -->
+    <!-- Needed for WebApplicationFactory integration testing helpers -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="*" />
-    <!-- Optional helper (many teams like it). Remove if you prefer no deps -->
+
+    <!-- Optional; safe to remove if you don't want it -->
     <PackageReference Include="System.Net.Http.Json" Version="*" />
   </ItemGroup>
 </Project>
