@@ -21,7 +21,7 @@ To download and install this Developer productivity package:
  - ** Package Manager Console - dotnet add package VijayaKumbaji.DotNet.Productivity 
 
  # Developer friendly note:
-- ** API keys were gerenrated on this website (generates free API Keys):
+- ** API keys were generated on this website (generates free API Keys):
 - ** https://www.strongdm.com/tools/api-key-generator  
 
 # Important:
