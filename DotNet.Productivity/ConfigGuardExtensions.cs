@@ -60,14 +60,14 @@ namespace ConfigGuard
         /// Validates DataAnnotations immediately and throws detailed errors.
         /// Helpful for manual access to validated options.
         /// </summary>
-        public static TOptions GetValidated<TOptions>(this IConfiguration configuration, string sectionName)
+        public static TOptions GetValidated<TOptions>(this IConfiguration configuration, string sectionName, TOptions options)
             where TOptions : class, new()
         {
             var section = configuration.GetSection(sectionName);
             if (!section.Exists())
                 throw new InvalidOperationException($"Required configuration section '{sectionName}' was not found.");
 
-            var options = new TOptions()
+            var options = options
             // section.Bind(options);
             .Bind(options => options.BindNonPublicProperties = true);
 
